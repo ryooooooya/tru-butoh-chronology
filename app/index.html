@@ -25,7 +25,7 @@
 
 <body>
   <!-- guide -->
-  <div class="cont-wrap guide-wrap">
+  <!-- <div class="cont-wrap guide-wrap">
     <div class="col-wrap guide">
       <div class="col col-lg-1">
       </div>
@@ -52,241 +52,117 @@
       <div class="col col-lg-1">
       </div>
     </div>
-  </div>
-  <nav class="cont-wrap m-nav t-nav">
-    <div class="col-wrap">
-      <div class="col col-lg-2 col-md-12 col-middle m-nav-logo">
-        <h1>Ryoya.Grid.CSS</h1>
-      </div>
-    </div>
-  </nav>
-  <section class="cont-wrap" id="responsive">
-    <div class="col-wrap">
-      <div class="col-lg-12" style="height: 200px;">
-        <img src="https://source.unsplash.com/random" alt="">
-      </div>
-      <div class="col-lg-12">
-        <h2>COLUMNS - Responsive</h2>
-        <p>.col-[mq]-[number] を指定。［.colに指定］</p>
-        <p>lg, md, sm, xsは変数で管理。</p>
-        <p>res : col-lg-4, col-md-3, col-sm-6, col-xs-12</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap" id="nogutter">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - nogutter</h2>
-        <p>.nogutterを指定。［.col-wrapに指定］</p>
-        <p>gutterなし。</p>
-      </div>
-    </div>
-    <div class="col-wrap nogutter">
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap" id="max">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Max[100%]</h2>
-        <p>.maxを指定。［.col-wrapに指定］</p>
-        <p>colごとのpaddingは別で指定する。</p>
-        <p>res : col-lg-6, col-md-3, col-sm-6, col-xs-12</p>
-      </div>
-    </div>
-    <div class="col-wrap max">
-      <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p>col-max-12</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap" id="offset">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - offset</h2>
-        <p>.offset-[mq]-[number] を指定。［.colに指定］</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-3 offset-lg-1">
-        <p>col-3 [offset-lg-1]</p>
-      </div>
-      <div class="col col-lg-4 offset-md-2">
-        <p>col-4 [offset-md-2]</p>
-      </div>
-      <div class="col col-lg-3 offset-sm-4">
-        <p>col-3 [offset-sm-4]</p>
-      </div>
-      <div class="col col-lg-2 offset-xs-6">
-        <p>col-2 [offset-xs-6]</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Break</h2>
-        <p>.break-[mq]-[number] を指定。［.colに指定］</p>
-        <p>colの右側にmarginをつけて改行する。</p>
-        <p>すべてmq-targetなので、ブレイクポイントごとに指定する。</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-2 col-xs-6 break-xs-6">
-        <p>col[break-xs]</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6 break-lg-4">
-        <p>col [break-lg]</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6">
-        <p>col</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6">
-        <p>col</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6 break-lg-6">
-        <p>col[break-lg]</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6">
-        <p>col</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Align</h2>
-        <h3>横</h3>
-        <p>左、中央、右揃えを行う。上下揃えも可（top, middle, center）</p>
-        <p>.wrap-[classname] を指定。［.col-wrapに指定］</p>
-      </div>
-    </div>
-    <div class="col-wrap wrap-start">
-      <div class="col col-lg-4">
-        <p>col-4 col-left</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4 col-right</p>
-      </div>
-    </div>
-    <div class="col-wrap wrap-center">
-      <div class="col col-lg-4">
-        <p>col-4 col-center</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4 col-center</p>
-      </div>
-    </div>
-    <div class="col-wrap wrap-right">
-      <div class="col col-lg-4">
-        <p>col-4 col-right</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4 col-right</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h3>縦</h3>
-        <p>colごとに上下揃えを変える</p>
-        <p>.col-[classname] を指定。［.colに指定］</p>
-      </div>
-    </div>
-    <div class="col-wrap" style="height:300px; background:#f0f0f0;">
-      <div class="col col-lg-4 col-top">
-        <p>col-4 top</p>
-      </div>
-      <div class="col col-lg-4 col-middle">
-        <p>col-4 middle</p>
-      </div>
-      <div class="col col-lg-4 col-bottom margin-reset">
-        <p>col-4 bottom</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap">
-    <!-- <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Other</h2>
-        <h3>入れ子</h3>
-        <p>colを入れ子にする</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-      <div class="col-wrap col-lg-4">
-        <div class="col col-lg-2">
-          <p>col-2（col-4内）</p>
-        </div>
-        <div class="col col-lg-2">
-          <p>col-2（col-4内）</p>
+  </div> -->
+  <main>
+    <section class="cont-wrap">
+      <div class="col-wrap wrap-center">
+        <div class="col col-lg-8 col-sm-12">
+          <h1 class="t-a-center">
+            舞踏出来事ロジー
+          </h1>
+          <p class="t-a-center">
+            舞踏はどのように生まれ、成長し、今に至るかを、舞踏が引き起こした出来事に注目しながら見ていく年表です。<br>
+            舞踏は、ふつうのダンスとは異なる独特な形と人種や国境を越えていくたくましい力を持っています。<br>
+            わたしたちの目に触れた出来事の年表から舞踏は何なのかを探してみてください。
+          </p>
         </div>
       </div>
-      <div class="col col-lg-4">
-        <p>col-4</p>
+      <div class="col-wrap">
+        <div class="col col-lg-2 offset-lg-4 col-sm-6 offset-sm-0">
+          ● 舞踏団結成年表
+        </div>
+        <div class="col col-lg-2 col-sm-6">
+          ● フェスティバル発足
+        </div>
       </div>
-    </div> -->
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h3>消す</h3>
-        <p>要素を消す</p>
+    </section>
+    <section class="year y-1959 cont-wrap">
+      <div class="col-wrap">
+        <!-- col -->
+        <div class="col col-left col-lg-12">
+          <h2>
+            前衛舞踊の疾走
+          </h2>
+        </div>
+        <!-- col -->
+        <div class="col col-left col-lg-5 col-sm-12">
+          <p class="m-t-lg-8">
+            舞踏の歴史的原点は土方巽の「禁色」と言われています。「禁色」は、土方巽と大野慶人によるわずか10数分のデュオ作品ですが、同性愛というテーマ、生きた鶏を使う演出、堅く硬直した身体等、類を見ない新しさは、大きな事件、スキャンダルになりました。舞踏が最初に引き起こした出来事です。
+          </p>
+        </div>
+        <!-- col -->
+        <div class="col col-right col-lg-5 offset-lg-2 col-sm-12 offse-sm-0">
+          <h3>
+            土方巽「禁色」一大スキャンダル
+          </h3>
+          <p class="m-t-lg-8">
+            生きた鶏を使う演出、（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります
+          </p>
+          <div class="image m-t-lg-28">
+            <img src="https://source.unsplash.com/random" alt="">
+          </div>
+        </div>
+        <!-- <div class="col col-right col-lg-6 offset-lg-6">
+          <div class="image m-t-lg-28">
+            <img src="https://source.unsplash.com/random" alt="">
+          </div>
+        </div> -->
+        <!-- col -->
+        <div class="col col-left col-lg-5 col-sm-12 offse-sm-0">
+          <h2>
+            危機に立つ肉体
+          </h2>
+          <p class="m-t-lg-8">
+            土方の周りに多くの芸術家が集まり、坩堝のような熱い文化サロンが生まれます。詩人、美術家、音楽家、舞踏家が共働した作品が生まれ、その中心にいつも土方がいました。高度経済成長を背景に、舞踏家達はショーダンスで稼ぎ、雑多なエネルギーを吸収しながら、舞踏は純粋芸術として急展開していきます。
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-3 hidden-lg">
-        <p>col-3 md,sm,xs</p>
+    </section>
+    <section class="year y-1960s cont-wrap">
+      <div class="col-wrap">
+        <!-- col -->
+        <div class="col col-left col-lg-5 break-lg-6 col-sm-12 offse-sm-0">
+          <h3>
+            650エクスペリエンスの会
+          </h3>
+          <p class="m-t-lg-8">
+            （ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります
+          </p>
+          <div class="image m-t-lg-28" style="height:308px">
+            <img src="https://source.unsplash.com/random" alt="">
+          </div>
+        </div>
+        <!-- col -->
+        <div class="col col-right col-lg-5 offset-lg-7 col-sm-12 offse-sm-0" style="margin-top: -336px;">
+          <h3>
+            三島由紀夫、澁澤龍彦との交流
+          </h3>
+          <p class="m-t-lg-8">
+            （ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります
+          </p>
+          <h3 class="m-t-lg-56">
+            中西夏之、河原温との交流
+          </h3>
+          <p class="m-t-lg-8">
+            （ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります
+          </p>
+          <h3 class="m-t-lg-56">
+            キャバレーの舞踏ダンサー達
+          </h3>
+          <p class="m-t-lg-8">
+            （ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります
+          </p>
+          <h3 class="m-t-lg-56">
+            トマト
+          </h3>
+          <p class="m-t-lg-8">
+            （ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります（ダミー文章）補足説明がはいります
+          </p>
+          <div class="image m-t-lg-56">
+            <img src="https://source.unsplash.com/random" alt="">
+          </div>
+        </div>
       </div>
-      <div class="col col-lg-3 hidden-md">
-        <p>col-3 lg,sm,xs</p>
-      </div>
-      <div class="col col-lg-3 hidden-sm">
-        <p>col-3 lg,md,xs</p>
-      </div>
-      <div class="col col-lg-3 hidden-xs">
-        <p>col-3 lg,md,sm</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </body>

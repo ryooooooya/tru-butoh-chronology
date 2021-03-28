@@ -1,6 +1,6 @@
 /* グリッド */
-$col-wid:53px;
-$gutter-wid:60px;
+$col-wid:82px;
+$gutter-wid:16px;
 $gutter-wid-sm:18px;
 $colwrap-wid: $col-wid * 12 + $gutter-wid * 12;
 $col-md-wid: $col-wid / $colwrap-wid * 100;
@@ -65,4 +65,21 @@ ul,li,ol{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+h2{
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+h3{
+  font-size: 1.5rem;
+  line-height: 1.16666666;
+  letter-spacing: 0.07em;
+  font-feature-settings: "palt";
+}
+p{
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: 0.07em;
+  font-feature-settings: "palt";
+  text-align: justify;
 }
